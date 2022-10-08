@@ -19,6 +19,7 @@ class DetailViewController: UIViewController {
     
     var selectedCode = ""
     var selectedImage = UIImage()
+    var defaultHeader = "Country Code: "
     var selectedName = ""
     var wikiId = ""
     
@@ -36,7 +37,7 @@ class DetailViewController: UIViewController {
         
         
         navigation.title = selectedName
-        codeLabel.text = selectedCode
+        codeLabel.text = defaultHeader + selectedCode
         
         
         

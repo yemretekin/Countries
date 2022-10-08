@@ -81,7 +81,7 @@ extension HomeViewController:UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         countryCode = countData[indexPath.section].code!
         countryName = countData[indexPath.section].name!
-        //countryId = countData[indexPath.section].wikiDataID
+        countryId = countData[indexPath.section].wikiDataId ?? ""
 
         
         performSegue(withIdentifier: "toDetailsVC", sender:nil)

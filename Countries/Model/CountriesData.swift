@@ -13,7 +13,7 @@ struct CountriesData: Decodable {
 }
 struct Country: Decodable {
     let code: String?
-    let name, wikiDataID: String?
+    let name, wikiDataId: String? 
     }
 
 
