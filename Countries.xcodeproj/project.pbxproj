@@ -7,25 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A614A6328F07059003A5038 /* CountriesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A614A6228F07059003A5038 /* CountriesManager.swift */; };
 		9A67BC8028EEFAE400794F53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A67BC7F28EEFAE400794F53 /* AppDelegate.swift */; };
 		9A67BC8228EEFAE400794F53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A67BC8128EEFAE400794F53 /* SceneDelegate.swift */; };
-		9A67BC8428EEFAE400794F53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A67BC8328EEFAE400794F53 /* ViewController.swift */; };
+		9A67BC8428EEFAE400794F53 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A67BC8328EEFAE400794F53 /* HomeViewController.swift */; };
 		9A67BC8728EEFAE400794F53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A67BC8528EEFAE400794F53 /* Main.storyboard */; };
 		9A67BC8A28EEFAE400794F53 /* Countries.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A67BC8828EEFAE400794F53 /* Countries.xcdatamodeld */; };
 		9A67BC8C28EEFAE500794F53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A67BC8B28EEFAE500794F53 /* Assets.xcassets */; };
 		9A67BC8F28EEFAE500794F53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A67BC8D28EEFAE500794F53 /* LaunchScreen.storyboard */; };
+		9A67BC9C28EF043D00794F53 /* CountriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A67BC9A28EF043D00794F53 /* CountriesTableViewCell.swift */; };
+		9A67BC9D28EF043D00794F53 /* CountriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A67BC9B28EF043D00794F53 /* CountriesTableViewCell.xib */; };
+		9A77FBCF28EF4324008C380B /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A77FBCE28EF4324008C380B /* SavedViewController.swift */; };
+		9A77FBD128EF4331008C380B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A77FBD028EF4331008C380B /* DetailViewController.swift */; };
+		9A77FBD628EF6B8F008C380B /* CountriesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A77FBD528EF6B8F008C380B /* CountriesData.swift */; };
+		9ACB8EBC28F1CC16002E4CB7 /* CountriesDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACB8EBB28F1CC16002E4CB7 /* CountriesDetail.swift */; };
+		9ACB8EBF28F1E5F2002E4CB7 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 9ACB8EBE28F1E5F2002E4CB7 /* SDWebImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A614A6228F07059003A5038 /* CountriesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesManager.swift; sourceTree = "<group>"; };
 		9A67BC7C28EEFAE400794F53 /* Countries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Countries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A67BC7F28EEFAE400794F53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A67BC8128EEFAE400794F53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9A67BC8328EEFAE400794F53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9A67BC8328EEFAE400794F53 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9A67BC8628EEFAE400794F53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A67BC8928EEFAE400794F53 /* Countries.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Countries.xcdatamodel; sourceTree = "<group>"; };
 		9A67BC8B28EEFAE500794F53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A67BC8E28EEFAE500794F53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A67BC9028EEFAE500794F53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A67BC9A28EF043D00794F53 /* CountriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesTableViewCell.swift; sourceTree = "<group>"; };
+		9A67BC9B28EF043D00794F53 /* CountriesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountriesTableViewCell.xib; sourceTree = "<group>"; };
+		9A77FBCE28EF4324008C380B /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
+		9A77FBD028EF4331008C380B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9A77FBD528EF6B8F008C380B /* CountriesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesData.swift; sourceTree = "<group>"; };
+		9ACB8EBB28F1CC16002E4CB7 /* CountriesDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,12 +48,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ACB8EBF28F1E5F2002E4CB7 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A45766E28EF2B2300E3F8B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9A77FBD528EF6B8F008C380B /* CountriesData.swift */,
+				9A614A6228F07059003A5038 /* CountriesManager.swift */,
+				9ACB8EBB28F1CC16002E4CB7 /* CountriesDetail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9A45766F28EF2B4B00E3F8B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9A67BC8328EEFAE400794F53 /* HomeViewController.swift */,
+				9A77FBCE28EF4324008C380B /* SavedViewController.swift */,
+				9A77FBD028EF4331008C380B /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9A45767028EF360C00E3F8B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9A67BC8528EEFAE400794F53 /* Main.storyboard */,
+				9A67BC8D28EEFAE500794F53 /* LaunchScreen.storyboard */,
+				9A67BC9B28EF043D00794F53 /* CountriesTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		9A67BC7328EEFAE400794F53 = {
 			isa = PBXGroup;
 			children = (
@@ -58,16 +104,49 @@
 		9A67BC7E28EEFAE400794F53 /* Countries */ = {
 			isa = PBXGroup;
 			children = (
-				9A67BC7F28EEFAE400794F53 /* AppDelegate.swift */,
-				9A67BC8128EEFAE400794F53 /* SceneDelegate.swift */,
-				9A67BC8328EEFAE400794F53 /* ViewController.swift */,
-				9A67BC8528EEFAE400794F53 /* Main.storyboard */,
-				9A67BC8B28EEFAE500794F53 /* Assets.xcassets */,
-				9A67BC8D28EEFAE500794F53 /* LaunchScreen.storyboard */,
 				9A67BC9028EEFAE500794F53 /* Info.plist */,
-				9A67BC8828EEFAE400794F53 /* Countries.xcdatamodeld */,
+				9A7838E028F0E47300778276 /* Utilities */,
+				9A77FBDB28EF81EC008C380B /* Cell */,
+				9A45766E28EF2B2300E3F8B8 /* Model */,
+				9A45767028EF360C00E3F8B8 /* View */,
+				9A45766F28EF2B4B00E3F8B8 /* Controller */,
+				9A7838E128F0E49400778276 /* Resources */,
+				9A67BC8B28EEFAE500794F53 /* Assets.xcassets */,
+				9A7838E228F0E4A200778276 /* CoreData */,
 			);
 			path = Countries;
+			sourceTree = "<group>";
+		};
+		9A77FBDB28EF81EC008C380B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9A67BC9A28EF043D00794F53 /* CountriesTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		9A7838E028F0E47300778276 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9A67BC7F28EEFAE400794F53 /* AppDelegate.swift */,
+				9A67BC8128EEFAE400794F53 /* SceneDelegate.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		9A7838E128F0E49400778276 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9A7838E228F0E4A200778276 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9A67BC8828EEFAE400794F53 /* Countries.xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +165,9 @@
 			dependencies = (
 			);
 			name = Countries;
+			packageProductDependencies = (
+				9ACB8EBE28F1E5F2002E4CB7 /* SDWebImage */,
+			);
 			productName = Countries;
 			productReference = 9A67BC7C28EEFAE400794F53 /* Countries.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +196,9 @@
 				Base,
 			);
 			mainGroup = 9A67BC7328EEFAE400794F53;
+			packageReferences = (
+				9ACB8EBD28F1E5F2002E4CB7 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 9A67BC7D28EEFAE400794F53 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -130,6 +215,7 @@
 			files = (
 				9A67BC8F28EEFAE500794F53 /* LaunchScreen.storyboard in Resources */,
 				9A67BC8C28EEFAE500794F53 /* Assets.xcassets in Resources */,
+				9A67BC9D28EF043D00794F53 /* CountriesTableViewCell.xib in Resources */,
 				9A67BC8728EEFAE400794F53 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,10 +227,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A67BC8428EEFAE400794F53 /* ViewController.swift in Sources */,
+				9A77FBCF28EF4324008C380B /* SavedViewController.swift in Sources */,
+				9A67BC8428EEFAE400794F53 /* HomeViewController.swift in Sources */,
 				9A67BC8028EEFAE400794F53 /* AppDelegate.swift in Sources */,
 				9A67BC8A28EEFAE400794F53 /* Countries.xcdatamodeld in Sources */,
+				9A77FBD628EF6B8F008C380B /* CountriesData.swift in Sources */,
 				9A67BC8228EEFAE400794F53 /* SceneDelegate.swift in Sources */,
+				9A67BC9C28EF043D00794F53 /* CountriesTableViewCell.swift in Sources */,
+				9A614A6328F07059003A5038 /* CountriesManager.swift in Sources */,
+				9ACB8EBC28F1CC16002E4CB7 /* CountriesDetail.swift in Sources */,
+				9A77FBD128EF4331008C380B /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +456,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9ACB8EBD28F1E5F2002E4CB7 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9ACB8EBE28F1E5F2002E4CB7 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9ACB8EBD28F1E5F2002E4CB7 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		9A67BC8828EEFAE400794F53 /* Countries.xcdatamodeld */ = {
