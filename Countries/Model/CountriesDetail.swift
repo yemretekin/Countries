@@ -15,5 +15,5 @@ struct CountryDetail : Decodable {
     let code : String?
     let flagImageUri : String?
     let name : String?
-    let wikiDataId : Int?
+    let wikiDataId : String?
 }
