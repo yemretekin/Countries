@@ -11,7 +11,6 @@ import WebKit
 class DetailViewController: UIViewController {
     @IBOutlet weak var navigation: UINavigationItem!
     @IBOutlet weak var imageView: WKWebView!
-    
     @IBOutlet weak var codeLabel: UILabel!
     
     @IBOutlet weak var favButton: UIBarButtonItem!
@@ -27,9 +26,7 @@ class DetailViewController: UIViewController {
     var countryManager = CountriesManager()
     var countDetailData =  [Country]()
     var homeVC = HomeViewController()
-    
-    
-    //var selectedCountryImage = UIImage()
+
 
 
     override func viewDidLoad() {
@@ -58,11 +55,16 @@ class DetailViewController: UIViewController {
                 wikiId = countriesDetails.data.wikiDataId ?? ""
                 
                 if let imageUrl = URL(string: countriesDetails.data.flagImageUri ?? "") {
-                        imageView.load(URLRequest(url: imageUrl))
+                    imageView.load(URLRequest(url: imageUrl))
                     imageView.contentMode = .scaleToFill
+                                }
+
+
+    
+                                       
                 }
             }
-    }
+    
    
 
     

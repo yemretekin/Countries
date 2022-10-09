@@ -8,6 +8,7 @@
 import UIKit
 
 class CountriesTableViewCell: UITableViewCell, UINavigationControllerDelegate {
+    var homieData = [String]()
 
     @IBOutlet weak var cellLabel: UILabel!
     @IBOutlet weak var cellButton: UIButton!
@@ -23,16 +24,11 @@ class CountriesTableViewCell: UITableViewCell, UINavigationControllerDelegate {
         super.awakeFromNib()
     }
     
-    func configure(model:Country){
-        self.cellLabel.text = model.name
-        self.code = model.code ?? ""
-    }
-    
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
     }
+    
     
     @IBAction func cellButtonClicked(_ sender: UIButton) {
         if flag == false {

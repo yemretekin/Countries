@@ -60,7 +60,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="hl9-WN-6ur">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SavedTableViewCell" id="hl9-WN-6ur">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hl9-WN-6ur" id="gIY-y3-cHZ">
@@ -82,7 +82,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Countries" id="lRs-6i-uS1"/>
                     <connections>
-                        <outlet property="savedTableView" destination="qXl-tt-4t0" id="Yvm-u5-wYj"/>
+                        <outlet property="savedTableView" destination="qXl-tt-4t0" id="gCk-69-UqT"/>
                         <segue destination="ZUN-bn-gAc" kind="show" identifier="toDetailVC" id="iCM-9l-GZA"/>
                     </connections>
                 </viewController>
@@ -153,12 +153,12 @@
         <scene sceneID="aTA-6S-6hN">
             <objects>
                 <viewController id="ZUN-bn-gAc" customClass="DetailViewController" customModule="Countries" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wWM-Gm-MSV">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="wWM-Gm-MSV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="piS-Lb-SCl">
-                                <rect key="frame" x="7.5" y="478" width="188.5" height="46"/>
+                                <rect key="frame" x="36" y="477" width="188.5" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="4fn-7W-beb"/>
                                 </constraints>
@@ -170,18 +170,20 @@
                                     <action selector="informationButtonClicked:" destination="ZUN-bn-gAc" eventType="touchUpInside" id="5vx-Oj-yCR"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Country Code:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTt-9k-KMO">
-                                <rect key="frame" x="20" y="450" width="176" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Code:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTt-9k-KMO">
+                                <rect key="frame" x="36" y="438" width="188.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ay3-7m-ORs">
-                                <rect key="frame" x="0.0" y="88" width="414" height="320"/>
+                            <wkWebView contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="B2X-FF-wRz">
+                                <rect key="frame" x="36" y="134" width="342" height="197"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="414" id="5JJ-qg-V3H"/>
-                                    <constraint firstAttribute="height" constant="320" id="EX4-wd-Tax"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="197" id="5D3-rT-Vyr"/>
+                                    <constraint firstAttribute="width" constant="342" id="R7d-PN-MN2"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="342" id="gp8-jV-7Pf"/>
+                                    <constraint firstAttribute="height" constant="197" id="if1-au-Oi6"/>
                                 </constraints>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -192,14 +194,16 @@
                         <viewLayoutGuide key="safeArea" id="6Bv-mK-au7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ay3-7m-ORs" firstAttribute="leading" secondItem="wWM-Gm-MSV" secondAttribute="leading" id="2C5-je-bPq"/>
-                            <constraint firstItem="ay3-7m-ORs" firstAttribute="top" secondItem="6Bv-mK-au7" secondAttribute="top" id="3uD-Rc-5ia"/>
-                            <constraint firstItem="6Bv-mK-au7" firstAttribute="trailing" secondItem="piS-Lb-SCl" secondAttribute="trailing" constant="218" id="LOR-jL-NEc"/>
-                            <constraint firstItem="piS-Lb-SCl" firstAttribute="top" secondItem="lTt-9k-KMO" secondAttribute="bottom" constant="7" id="Nn5-eo-ZTj"/>
-                            <constraint firstItem="6Bv-mK-au7" firstAttribute="bottom" secondItem="piS-Lb-SCl" secondAttribute="bottom" constant="289" id="Vev-RL-IzL"/>
-                            <constraint firstItem="lTt-9k-KMO" firstAttribute="top" secondItem="ay3-7m-ORs" secondAttribute="bottom" constant="42" id="drV-pA-2O0"/>
-                            <constraint firstAttribute="trailing" secondItem="ay3-7m-ORs" secondAttribute="trailing" id="rcx-Kg-EXs"/>
-                            <constraint firstItem="lTt-9k-KMO" firstAttribute="leading" secondItem="wWM-Gm-MSV" secondAttribute="leadingMargin" id="vgM-7p-dMK"/>
+                            <constraint firstItem="B2X-FF-wRz" firstAttribute="leading" secondItem="6Bv-mK-au7" secondAttribute="leading" constant="36" id="7h7-g5-0UC"/>
+                            <constraint firstItem="B2X-FF-wRz" firstAttribute="trailing" secondItem="6Bv-mK-au7" secondAttribute="trailing" constant="-36" id="DDS-MW-PLZ"/>
+                            <constraint firstItem="6Bv-mK-au7" firstAttribute="trailing" secondItem="B2X-FF-wRz" secondAttribute="trailing" constant="36" id="L6c-Yu-m4f"/>
+                            <constraint firstItem="6Bv-mK-au7" firstAttribute="trailing" secondItem="piS-Lb-SCl" secondAttribute="trailing" constant="189.5" id="LOR-jL-NEc"/>
+                            <constraint firstItem="piS-Lb-SCl" firstAttribute="top" secondItem="lTt-9k-KMO" secondAttribute="bottom" constant="18" id="Nn5-eo-ZTj"/>
+                            <constraint firstItem="lTt-9k-KMO" firstAttribute="leading" secondItem="piS-Lb-SCl" secondAttribute="leading" id="PGZ-30-M3a"/>
+                            <constraint firstItem="6Bv-mK-au7" firstAttribute="bottom" secondItem="piS-Lb-SCl" secondAttribute="bottom" constant="290" id="Vev-RL-IzL"/>
+                            <constraint firstItem="B2X-FF-wRz" firstAttribute="leading" secondItem="6Bv-mK-au7" secondAttribute="leading" constant="36" id="WON-mX-geH"/>
+                            <constraint firstItem="6Bv-mK-au7" firstAttribute="trailing" secondItem="lTt-9k-KMO" secondAttribute="trailing" constant="189.5" id="ahh-M3-n7d"/>
+                            <constraint firstItem="B2X-FF-wRz" firstAttribute="top" secondItem="6Bv-mK-au7" secondAttribute="top" constant="46" id="jyA-5b-ufZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6x2-nv-clP">
@@ -217,7 +221,7 @@
                     <connections>
                         <outlet property="codeLabel" destination="lTt-9k-KMO" id="qLp-5H-G7O"/>
                         <outlet property="favButton" destination="xB3-2N-BWP" id="wZn-Pb-AKE"/>
-                        <outlet property="imageView" destination="ay3-7m-ORs" id="hMG-By-vxH"/>
+                        <outlet property="imageView" destination="B2X-FF-wRz" id="ZHF-Sm-qRo"/>
                         <outlet property="navigation" destination="6x2-nv-clP" id="0IT-If-w3M"/>
                     </connections>
                 </viewController>
@@ -227,7 +231,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="gWy-NI-t7W"/>
+        <segue reference="iCM-9l-GZA"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.backward" catalog="system" width="128" height="98"/>
