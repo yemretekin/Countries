@@ -15,4 +15,5 @@ Technologies used in the project:
 *   Webkit
 
 
-<img src="https://user-images.githubusercontent.com/43580854/194752611-04957471-3678-4890-be77-bb6257ced1b8.gif" width="300" height="609" />
+
+<img src="https://user-images.githubusercontent.com/43580854/194752743-1903d0ef-2a62-4ea9-a101-cecd11bdd76d.gif" width="300" height="609" />
